@@ -1,0 +1,43 @@
+.conhecer {
+    height: 79.9%;
+}
+
+.conhecer-row {
+  max-width: 40rem;
+  min-width: none;
+  max-height: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 10px 5px 5px rgba(17, 12, 46, 0.15);
+  margin: 4rem;
+}
+
+.main-card-col {
+  flex: 1 1 1px;
+  margin: 5px;
+  margin-right: 2rem;
+  
+}
+
+h1,
+h3 {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.main-card-col p {
+  max-width: 18rem;
+  text-align: justify;
+}
+
+.img-pet-col img {
+  min-width: none;
+  max-width: 22vw;
+  display: flex;
+  border-radius: 0.8rem;
+  border: solid 2px;
+  border-color: #9d69bf;
+}

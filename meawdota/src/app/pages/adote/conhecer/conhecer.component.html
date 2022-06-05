@@ -1,0 +1,41 @@
+<div class="conhecer" fxLayout="row wrap" fxLayoutAlign="center">
+
+
+    <mat-card class="conhecer-row">
+    
+        <div class="main-card-col" width="20rem">
+    
+            <h1><mat-icon style="color: #9d69bf">pets</mat-icon> Sobre Mim</h1>
+    
+    
+                <h3>Características</h3>
+    
+                <p>
+                    <b>Sexo: </b> <mat-chip>{{animal.sexo}}</mat-chip>
+                </p>
+            
+                <h3>Saúde</h3>
+                <mat-chip-list>
+                    <div *ngIf="animal.castrado === 'SIM'">
+                        <mat-chip>Castrado</mat-chip>
+                    </div>
+                    <div *ngIf="animal.vacinado === 'SIM'">
+                        <mat-chip>Vacinado</mat-chip>
+                    </div>
+                    <div *ngIf="animal.vermifugado === 'SIM'">
+                        <mat-chip>Vermifugado</mat-chip>
+                    </div>
+                </mat-chip-list>
+    
+                <h3>Conheça {{animal.nome}}</h3>
+        
+                <p>{{animal.descricao}}</p>
+                
+        </div>
+    
+        <div class="img-pet-col">
+            <img src="http://127.0.0.1:3333/uploads/{{animal.path}}" class="img" />
+        </div>
+</mat-card>
+
+</div>

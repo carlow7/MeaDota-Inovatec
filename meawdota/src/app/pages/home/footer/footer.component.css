@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+    background-color: var(--secondary-dark-color);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: inherit;
+}
+
+.pages{
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo{
+    align-items: center;
+}
+
+
+.footer img{
+    cursor: pointer;
+}
+
+.pages :hover{
+    color: var(--primary-color);
+}

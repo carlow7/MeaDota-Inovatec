@@ -1,0 +1,18 @@
+html, body { 
+    background-image: url("assets/img/background.png");
+    background-repeat: repeat;
+    height: 100vh; }
+body { 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #fff ;
+}
+
+:root {
+    --primary-color: #ffd700;
+    --secondary-color: #9d69bf;
+    --secondary-dark-color: #715081;
+    --yellow-color: #FFDD44;
+  }
+

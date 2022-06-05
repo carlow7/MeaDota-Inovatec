@@ -1,0 +1,65 @@
+.parceria{
+  
+}
+
+.cards{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 10px 5px 5px rgba(17, 12, 46, 0.15);
+}
+
+.title{
+    padding-top: 2rem;
+    padding-bottom:0.5rem;
+    padding-left: 2rem;
+}
+
+.cards p{
+    padding-bottom:0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.title h1{
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.mat-form-field {
+    margin-left: 8px;
+  }
+
+.currency-field .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+.currency-right-align {
+    text-align: right;
+  }
+  
+input.currency-right-align::-webkit-outer-spin-button,
+input.currency-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+input.currency-right-align {
+    -moz-appearance: textfield;
+  }
+
+  currency-field{
+    display: flex;
+    justify-content: center;
+  }

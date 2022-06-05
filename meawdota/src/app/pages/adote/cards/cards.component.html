@@ -1,0 +1,282 @@
+<div class="cardbody" fxLayout="row wrap" fxLayoutAlign="center space-around-4">
+
+<!--
+<div class="buttonsalva">
+    <a class="cadastre" mat-raised-button color="accent" routerLink="/cadastroanimal" routerLinkActive="active-link">Cadastre um Animal</a>
+</div>
+--> 
+  
+<!--
+ <div *ngFor="let row of Animais">
+    <mat-card class="pet-cards">
+      <mat-card-header>
+        
+        <mat-card-title>{{row.nome}}</mat-card-title>
+        <mat-card-subtitle
+          ><mat-icon style="font-size: 16px; color: #ffd740">place</mat-icon>{{row.bairro}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="http://127.0.0.1:3333/uploads/{{row.path}}" alt="Foto do Jon Snow" />
+  
+      <mat-card-content>
+        {{row.descricao}}
+      </mat-card-content>
+      <mat-chip-list>
+        <mat-chip>{{row.sexo}}</mat-chip>
+        <div *ngIf="row.castrado === 'SIM'">
+          <mat-chip>Castrado</mat-chip>
+        </div>
+        <div *ngIf="row.castrado === 'NAO'">
+      </div>
+      <div *ngIf="row.vermifugado === 'SIM'">
+        <mat-chip>Vermifugado</mat-chip>
+      </div>
+      <div *ngIf="row.vermifugado === 'NAO'">
+      </div>
+      </mat-chip-list>
+      <mat-card-actions>
+        <a
+          mat-raised-button
+          color="primary"
+          routerLink="/conhecer/{{row.id}}"
+          routerLinkActive="active-link"
+          >Conhecer</a>
+      </mat-card-actions>
+    </mat-card>
+-->
+    <mat-card class="pet-cards">
+      <mat-card-header>
+        <div mat-card-avatar class="first-header-image"></div>
+        <mat-card-title>Jon Snow</mat-card-title>
+        <mat-card-subtitle
+          ><mat-icon style="font-size: 16px; color: #ffd740">place</mat-icon>Zona
+          Sul</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets\pets\dog1.jpg" alt="Foto do Jon Snow" />
+  
+      <mat-card-content>
+        O Jon Snow é um cachorro macho, adulto de porte grande. É da raça
+        Samoieda.
+      </mat-card-content>
+      <mat-chip-list>
+        <mat-chip>Macho</mat-chip>
+        <mat-chip>Castrado</mat-chip>
+        <mat-chip>Vacinado</mat-chip>
+      </mat-chip-list>
+      <mat-card-actions>
+        <a
+          mat-raised-button
+          color="primary"
+          routerLink="/conhecer"
+          routerLinkActive="active-link"
+          >Conhecer</a>
+      </mat-card-actions>
+    </mat-card>
+  
+    <!--2nd card-->
+    <mat-card class="pet-cards">
+      <mat-card-header>
+        <div mat-card-avatar class="second-header-image"></div>
+        <mat-card-title>Vênus</mat-card-title>
+        <mat-card-subtitle
+          ><mat-icon style="font-size: 16px; color: #ffd740">place</mat-icon>Zona
+          Norte</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets\pets\gato1.jpg" alt="Foto da Vênus" />
+      <mat-card-content>
+        <p>
+          A Deusa da beleza e do amor está disponível para adoção. Vai perder esta
+          oportunidade?
+        </p>
+      </mat-card-content>
+      <mat-chip-list>
+        <mat-chip>Fêmea</mat-chip>
+        <mat-chip>Castrado</mat-chip>
+        <mat-chip>Vacinado</mat-chip>
+      </mat-chip-list>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Conhecer</button>
+        <button mat-raised-button color="accent">
+          <mat-icon style="font-size: 20px">share</mat-icon>Compartilhar
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  
+    <!--3rd card-->
+    <mat-card class="pet-cards">
+      <mat-card-header>
+        <div mat-card-avatar class="third-header-image"></div>
+        <mat-card-title>Garfield</mat-card-title>
+        <mat-card-subtitle
+          ><mat-icon style="font-size: 16px; color: #ffd740">place</mat-icon>Zona
+          Leste</mat-card-subtitle
+        >
+      </mat-card-header>
+      <img mat-card-image src="assets\pets\gato2.jpg" alt="Foto da Neve" />
+      <mat-card-content>
+        <p>
+          Preguiçoso, guloso, viciado em café, amante de televisão e acima de
+          tudo, sarcástico.
+        </p>
+      </mat-card-content>
+      <mat-chip-list>
+        <mat-chip>Macho</mat-chip>
+        <mat-chip>Castrado</mat-chip>
+        <mat-chip>Vermifugado</mat-chip>
+      </mat-chip-list>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Conhecer</button>
+        <button mat-raised-button color="accent">
+          <mat-icon style="font-size: 20px">share</mat-icon>Compartilhar
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  
+    <!--4th card-->
+    <mat-card class="pet-cards">
+      <mat-card-header>
+        <div mat-card-avatar class="fourth-header-image"></div>
+        <mat-card-title>Pepê</mat-card-title>
+        <mat-card-subtitle
+          ><mat-icon style="font-size: 16px; color: #ffd740">place</mat-icon>Zona
+          Oeste</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets\pets\gato5.jpg" alt="Foto da Neve" />
+      <mat-card-content>
+        <p>A Pepê está em busca de seu Neném, adote-a! Saiba mais 👇🏽👇🏽</p>
+      </mat-card-content>
+      <mat-chip-list>
+        <mat-chip>Fêmea</mat-chip>
+        <mat-chip>Vacinado</mat-chip>
+        <mat-chip>Castrado</mat-chip>
+      </mat-chip-list>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Conhecer</button>
+        <button mat-raised-button color="accent">
+          <mat-icon style="font-size: 20px">share</mat-icon>Compartilhar
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  
+    <!--5th card
+      <mat-card class="pet-cards">
+      <mat-card-header>
+        <div mat-card-avatar class="fifth-header-image"></div>
+        <mat-card-title>Velho</mat-card-title>
+        <mat-card-subtitle
+          ><mat-icon style="font-size: 16px; color: #ffd740">place</mat-icon>Zona
+          Centro-Sul</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets\pets\dog5.jpg" alt="Foto da Neve" />
+      <mat-card-content>
+        <p>
+          O Velho, apesar do nome, é um jovem cachorro adulto de grande porte em
+          busca de um novo lar!
+        </p>
+      </mat-card-content>
+      <mat-chip-list>
+        <mat-chip>Macho</mat-chip>
+        <mat-chip>Castrado</mat-chip>
+      </mat-chip-list>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Conhecer</button>
+        <button mat-raised-button color="accent">
+          <mat-icon style="font-size: 20px">share</mat-icon>Compartilhar
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  
+
+    <mat-card class="pet-cards">
+      <mat-card-header>
+        <div mat-card-avatar class="sixth-header-image"></div>
+        <mat-card-title>Pompom</mat-card-title>
+        <mat-card-subtitle
+          ><mat-icon style="font-size: 16px; color: #ffd740">place</mat-icon
+          >Centro-Oeste</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets\pets\dog3.jpg" alt="Foto da Neve" />
+      <mat-card-content>
+        <p>
+          Samoieda é uma raça de cães do tipo spitz oriunda do norte da Rússia, na
+          região da Sibéria.
+        </p>
+      </mat-card-content>
+      <mat-chip-list>
+        <mat-chip>Macho</mat-chip>
+        <mat-chip>Castrado</mat-chip>
+        <mat-chip>Vacinado</mat-chip>
+      </mat-chip-list>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Conhecer</button>
+        <button mat-raised-button color="accent">
+          <mat-icon style="font-size: 20px">share</mat-icon>Compartilhar
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  
+  
+    <mat-card class="pet-cards">
+      <mat-card-header>
+        <div mat-card-avatar class="seventh-header-image"></div>
+        <mat-card-title>Angel</mat-card-title>
+        <mat-card-subtitle
+          ><mat-icon style="font-size: 16px; color: #ffd740">place</mat-icon>Zona
+          Leste</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets\pets\gato4.jpg" alt="Foto da Neve" />
+      <mat-card-content>
+        <p>Deixa eu ser um anjo na sua vida? 🥺</p>
+      </mat-card-content>
+      <mat-chip-list>
+        <mat-chip>Fêmea</mat-chip>
+        <mat-chip>Castrado</mat-chip>
+        <mat-chip>Vacinado</mat-chip>
+      </mat-chip-list>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Conhecer</button>
+        <button mat-raised-button color="accent">
+          <mat-icon style="font-size: 20px">share</mat-icon>Compartilhar
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  
+    
+    <mat-card class="pet-cards">
+      <mat-card-header>
+        <div mat-card-avatar class="eigth-header-image"></div>
+        <mat-card-title>Jack</mat-card-title>
+        <mat-card-subtitle
+          ><mat-icon style="font-size: 16px; color: #ffd740">place</mat-icon>Zona
+          Norte</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets\pets\gato3.jpg" alt="Foto da Neve" />
+      <mat-card-content>
+        <p>
+          Jack é um gato jovem, astuto, reservado e ranzinza. Se identifica?
+          Adote-o!
+        </p>
+      </mat-card-content>
+      <div class="bottom-container">
+        <mat-chip-list>
+          <mat-chip>Macho</mat-chip>
+          <mat-chip>Castrado</mat-chip>
+          <mat-chip>Vermifugado</mat-chip>
+        </mat-chip-list>
+        <mat-card-actions>
+          <button
+            mat-raised-button
+            color="primary"
+            routerLink="conhecer"
+            routerLinkActive="active-link">
+            Conhecer
+          </button>
+          <button mat-raised-button color="accent">
+            <mat-icon style="font-size: 20px">share</mat-icon>Compartilhar
+          </button>
+        </mat-card-actions>
+      </div>
+    </mat-card>
+
+    -->
+    
+  </div> 

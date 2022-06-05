@@ -1,0 +1,119 @@
+<mat-card-title>Cadastro de Animais</mat-card-title>
+
+<div class="cadastroanimal">
+  <label for="fisica"></label>
+  <label for="juridica"></label>
+  <label for="cep"></label>
+  <label for="nasc"></label>
+
+  <mat-card class="banner">
+    <img mat-card-image src="\assets\img\option1.svg" alt="" />
+  </mat-card>
+
+  <mat-card class="formulario">
+
+    <form>
+
+      <mat-form-field>
+        <p>Nome</p>
+        <input matInput [(ngModel)]="animal.animal_nome" name="name" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <p>Idade</p>
+        <input matInput [(ngModel)]="animal.animal_idade" name="idade" />
+      </mat-form-field>
+
+
+
+      <mat-form-field appearance="fill">
+        <p>Sexo</p>
+        <select matNativeControl required matInput [(ngModel)]="animal.animal_sexo" name="sexo">
+          <option value="masc">Masculino</option>
+          <option value="femi">Feminino</option>
+        </select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <p>Espécie</p>
+        <select matNativeControl required matInput placeholder="Espécie" [(ngModel)]="animal.animal_especie" name="especie">
+          <option value="gato">Gato</option>
+          <option value="cachorro">Cachorro</option>
+        </select>
+      </mat-form-field>
+
+      <mat-form-field class="descricao-full-width">
+        <p>Descrição</p>
+        <textarea rows="5" cols="45" matInput [(ngModel)]="animal.animal_descricao" name="desc" required minlength="20"
+          maxlength="100">
+        </textarea>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <p>Vacinado</p>
+        <select matNativeControl required matInput placeholder="vacinado" [(ngModel)]="animal.animal_vacinacao"
+          name="vacinado">
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <p>Vermifugado</p>
+        <select matNativeControl required matInput placeholder="vermifugado" [(ngModel)]="animal.animal_vermifugado"
+          name="vermifugado">
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <p>Castrado</p>
+        <select matNativeControl required matInput placeholder="castrado" [(ngModel)]="animal.animal_castracao"
+          name="castrado">
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <P>Bairro</P>
+        <input matInput [(ngModel)]="animal.animal_bairroocorrencia" name="bairro" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <P>Rua</P>
+        <input matInput [(ngModel)]="animal.animal_ruaocorrencia" name="bairro" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <P>Situação</P>
+        <input matInput [(ngModel)]="animal.animal_situacao" name="situacao" />
+      </mat-form-field>
+
+
+      <mat-form-field>
+        <p>Email</p>
+        <label for="email"></label>
+
+        <input type="email" id="email"
+               pattern=".+@globex\.com" required>
+      </mat-form-field>
+
+     <mat-form-field>
+       <p>Escolha a foto</p>
+      <label for="avatar"></label>
+
+      <input type="file"
+             id="avatar" name="avatar"
+             accept="image/png, image/jpeg, image/jpg">
+     </mat-form-field>
+     
+    <button mat-raised-button (click)="createanimal()" color="primary">
+                Salvar
+    </button>
+
+      <!-- <button mat-raised-button (click)="cancel()">Cancelar</button> -->
+    </form>
+  </mat-card>
+</div>

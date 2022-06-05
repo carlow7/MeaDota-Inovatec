@@ -1,0 +1,101 @@
+.roww{
+    display: flex;
+    align-items: center;
+    align-items: row;
+    justify-content: space-around;
+}
+
+.text h1{
+  color: aliceblue;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.buttons :hover{
+    box-shadow: 10px 5px 5px rgba(17, 12, 46, 0.15);
+}
+
+.mat-card-actions, .mat-card-subtitle, .mat-card-content {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.mat-card-actions{
+    padding: 8px;
+    margin-top: 6px;
+    margin-left: -12px;
+    margin-right: -13px;
+  }
+
+.buttons a{
+    padding: 12px 16px;
+    margin-right: 2rem;
+    font-size: 18px;
+}
+
+.banner img {
+    width: 42vw;
+    height: auto;
+    padding-bottom: 8rem;
+
+  }
+
+  /* ADOÇÃO DE ANIMAIS */
+
+.adotar {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: aliceblue;
+}
+
+
+.adotar h1 {
+    font-size: 46px;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.cards{
+    display: flex;
+    align-items: row;
+    justify-content: center;
+}
+
+.title{
+    font-weight: bold;
+    line-height:1.2;
+}
+
+.cards mat-card{
+    margin:2rem;
+    background-color: #8b629f;
+    color: aliceblue;
+    box-shadow: 10px 5px 5px rgba(17, 12, 46, 0.15);
+}
+
+.salve{
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 5px 5px rgba(17, 12, 46, 0.15);
+
+}
+
+.buttonsalva{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsalva a{
+    display: flex;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttonsalva :hover{
+    box-shadow: 10px 5px 5px rgba(17, 12, 46, 0.15);
+}

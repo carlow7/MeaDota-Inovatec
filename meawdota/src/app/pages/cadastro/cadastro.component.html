@@ -1,0 +1,127 @@
+<mat-card-title>Cadastro</mat-card-title>
+
+<div class="cadastro">
+  <label for="fisica"></label>
+  <label for="juridica"></label>
+  <label for="cep"></label>
+  <label for="nasc"></label>
+
+  <mat-card class="banner">
+    <img mat-card-image src="\assets\img\Dog paw-amico.svg" alt="" />
+  </mat-card>
+
+  <mat-card class="formulario">
+    <form>
+      <mat-form-field>
+        <p>Nome</p>
+        <input
+          matInput
+          placeholder="Nome"
+          [(ngModel)]="product.name"
+          name="name"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <p>Email</p>
+        <input
+          matInput
+          placeholder="Email"
+          [(ngModel)]="product.email"
+          name="email"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <p>Data de Nascimento</p>
+        <input
+          matInput
+          date
+          placeholder="Data de Nascimento"
+          [(ngModel)]="product.nasc"
+          name="nasc"
+          type="date"
+          id="start"
+          name="trip-start"
+          value="2022-05-26"
+          min="1900-01-01"
+          max="2100-12-31"
+          size="30"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <p>CPF</p>
+        <input
+          matInput
+          placeholder="CPF"
+          [(ngModel)]="product.cpf"
+          name="fisica"
+          required
+          minlength="4"
+          maxlength="11"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <P>CNPJ</P>
+        <input
+          matInput
+          placeholder="CNPJ"
+          [(ngModel)]="product.cnpj"
+          name="juridica"
+          required
+          minlength="4"
+          maxlength="14"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <p>Zona Residencial</p>
+        <select
+          matNativeControl
+          required
+          matInput
+          [(ngModel)]="product.zona"
+          name="zona"
+        >
+          <option value="norte">Norte</option>
+          <option value="leste">Leste</option>
+          <option value="sul">Sul</option>
+          <option value="oeste">Oeste</option>
+          <option value="centro-oeste">Centro-Oeste</option>
+          <option value="centro-sul">Centro-Sul</option>
+        </select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <P>CEP</P>
+        <input
+          matInput
+          placeholder="CEP"
+          [(ngModel)]="product.cep"
+          name="cep"
+          required
+          minlength="4"
+          maxlength="11"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <P>N° da Casa</P>
+        <input
+          matInput
+          placeholder="nº casa"
+          [(ngModel)]="product.n"
+          name="n"
+        />
+      </mat-form-field>
+
+      <!-- <button mat-raised-button (click)="createProduct()" color="primary">
+            Salvar
+        </button> -->
+
+      <button mat-raised-button routerLink="8" routerLinkActive="active-link" (click)="cancel()">Cancelar</button>
+    </form>
+  </mat-card>
+</div>

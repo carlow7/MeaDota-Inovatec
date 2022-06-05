@@ -1,0 +1,37 @@
+.navbar{
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
+    color: aliceblue;
+    padding-top: 2rem;
+}
+
+.pages a{
+    font-size: 16px;
+}
+
+.login a{
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.navbar img{
+    cursor: pointer;
+}
+
+.cadastrar :hover{
+    background-color: red;
+}
+
+.login :hover{
+    box-shadow: 10px 5px 5px rgba(17, 12, 46, 0.15);
+}
+
+.pages :hover{
+    color: var(--yellow-color);
+}
+
+mat-toolbar{
+    background-color: transparent;
+}

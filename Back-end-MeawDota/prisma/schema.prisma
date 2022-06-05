@@ -1,0 +1,139 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Zona{
+  zona_cod Int @id 
+  zona_nome String
+
+  @@map("zona")
+}
+
+model Contato_Pessoa{
+  contato_id Int @id
+  contato_principal String
+  contato_opcional String
+  contato_pessoa_email String
+
+  @@map("contato_pessoa")
+}
+
+model Tipo_Pessoa{
+  tipo_pescod Int @id
+  tipo_nome String
+
+  @@map("tipo_pessoa")
+}
+
+model Empresa{
+  empresa_cod Int @id
+  tipo_empresa String
+
+  @@map("empresa")
+}
+
+model Pessoa{
+  pessoa_email String @id
+  pessoa_nome String
+  pessoa_senha String
+  pessoa_cep String
+  pessoa_numerocasa String
+  pessoa_dtcadastro DateTime @default(now())
+  pessoa_dtnascimento DateTime @db.Date
+  pessoa_cpf String?
+  pessoa_cnpj String?
+  pessoa_zona Int
+  pessoa_documento Int
+  pessoa_empresa Int?
+
+  @@map("pessoa")
+}
+
+model Especie{
+  especie_cod Int @id
+  especie_nome String
+
+   @@map("especie")
+}
+
+model Situacao{
+  situacao_cod Int @id
+  tipo_situacao String
+
+   @@map("situacao")
+}
+
+model Adocao{
+  adocao_cod Int @id @default(autoincrement())
+  adocao_dt DateTime @default(now())
+  adocao_animalcod Int
+  adocao_pessoa String
+
+   @@map("adocao")
+}
+
+model Animal{
+  animal_cod Int @id @default(autoincrement())
+  animal_nome String
+  animal_sexo Animal_Sexo 
+  animal_idade Animal_Idade
+  animal_descricao String
+  animal_dtcadastro DateTime @default(now())
+  animal_vacinacao Animal_Vacinacao
+  animal_castracao Animal_Castracao
+  animal_bairroocorrencia String
+  animal_ruaocorrencia  String
+  animal_especie Int
+  animal_pessoacad String
+  animal_situacao Animal_Situacao
+  animal_vermifugado Animal_Vermifugado
+
+  @@map("animal")
+}
+
+model Image_Animal {
+  id Int @id @default(autoincrement())
+  path String[]
+  id_animal Int
+
+   @@map("image_animal")
+}
+
+enum Animal_Sexo {
+  MACHO
+  FEMEA
+}
+
+enum Animal_Idade {
+  Recem_Nascido
+  Filhote
+  Adulto
+}
+
+enum Animal_Castracao {
+  SIM
+  NAO
+}
+
+enum Animal_Vacinacao {
+  SIM
+  NAO  
+}
+
+enum Animal_Situacao {
+  PERDIDO
+  ADOCAO
+}
+
+enum Animal_Vermifugado {
+  SIM
+  NAO
+}
